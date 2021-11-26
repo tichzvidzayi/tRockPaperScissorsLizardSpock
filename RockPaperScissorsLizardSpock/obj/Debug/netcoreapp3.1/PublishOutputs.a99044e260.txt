@@ -1,0 +1,5 @@
+C:\Users\Tichaona Zvidzayi\source\repos\TRockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\bin\Debug\netcoreapp3.1\publish\RockPaperScissorsLizardSpock.exe
+C:\Users\Tichaona Zvidzayi\source\repos\TRockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\bin\Debug\netcoreapp3.1\publish\RockPaperScissorsLizardSpock.dll
+C:\Users\Tichaona Zvidzayi\source\repos\TRockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\bin\Debug\netcoreapp3.1\publish\RockPaperScissorsLizardSpock.deps.json
+C:\Users\Tichaona Zvidzayi\source\repos\TRockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\bin\Debug\netcoreapp3.1\publish\RockPaperScissorsLizardSpock.runtimeconfig.json
+C:\Users\Tichaona Zvidzayi\source\repos\TRockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\bin\Debug\netcoreapp3.1\publish\RockPaperScissorsLizardSpock.pdb

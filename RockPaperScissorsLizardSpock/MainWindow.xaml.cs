@@ -47,130 +47,151 @@ namespace RockPaperScissorsLizardSpock
                             - Lizard eats Paper    
                             - Paper disproves Spock  
                             - Spock vaporizes Rock  
-                            - Rock crushes Scissors"); 
+                            - Rock crushes Scissors");                     //welcome message
         }
-        short alienScore = 0, humanScore = 0;
+        short alienScore = 0, humanScore = 0, sets = 3;
         string[] xs = { "rock", "paper", "scissors", "lizard", "spock" };
 
-
-        
-
         private string CompChoice()
-        {  
-            Random rn = new Random();
-            return xs[rn.Next(5)];  
+        {
+            Random rn = new Random(Guid.NewGuid().GetHashCode());            //Alien pick
+            return xs[rn.Next(5)];
+      
         }
 
         private void Results(string human, string alien )
         {
+
             bool win =false, draw = false;
-          
-            if (human == xs[0])
-            { //User chooses rock
-                if (alien == xs[1] || alien ==xs[4])          // paper or spock
-                    alienScore += 3;
-                
-               else if (alien == xs[2] || alien ==xs[3])     // scissors or lizard
-                {
-                    win = true;
-                    humanScore += 3;
-                }
-                else
-                {
-                    draw = true;
-                    humanScore++;
-                    alienScore++;
-                }
-            } 
 
-          if (human == xs[1])
-            { //User chooses paper
-                if (alien == xs[2] || alien == xs[3])         // scissors or lizard
-                    alienScore += 3;
-         
-               else if (alien == xs[0] || alien == xs[4])
-                {                                             // rock or spock
-                    win = true;
-                    humanScore += 3;
-                }
-                else
-                {
-                    draw = true;
-                    humanScore++;
-                    alienScore++;
-                }
-            } 
-
-            if (human == xs[2])
-            { //User chooses rock
-                if (alien == xs[1] || alien == xs[4])           //paper or spock
-                    alienScore += 3;
-                
-
-               else if (alien == xs[0] || alien == xs[4])
-                {                                               // scissors or lizard
-                    win = true;
-                    humanScore += 3;
-                }
-
-                else
-                {
-                    draw = true;
-                    humanScore++;
-                    alienScore++;
-                }
+            try
+            {
+                sets = Convert.ToInt16(nsets.Text);              //Validate number of sets
             }
+            catch { sets = 3; }
 
-            if (human == xs[3])
-            { //User chooses lizard
-                if (alien == xs[0] || alien == xs[2])           // rock or scissors 
-                    alienScore += 3;
-                
-               else if (alien == xs[1] || alien == xs[4])
-                {                                               // paper or spock
-                    humanScore += 3;
-                }
-                else
-                {
-                    draw = true;
-                    humanScore++;
-                    alienScore++;
-                }
-            }
+                if (human == xs[0])
+                { //User chooses rock
+                    if (alien == xs[1] || alien == xs[4])          // paper or spock
+                        alienScore += 3;
 
-            if (human == xs[4])
-            { //User chooses spock
-                if (alien == xs[3] || alien == xs[1])           // lizard or paper
-                    alienScore += 3;
+                    else if (alien == xs[2] || alien == xs[3])     // scissors or lizard
+                    {
+                        win = true;
+                        humanScore += 3;
+                    }
+                    else
+                    {
+                        draw = true;
+                        humanScore++;
+                        alienScore++;
+                    }
+                }
 
-                else if (alien == xs[0] || alien == xs[2])
-                {                                               //  User chooses scissors or rock
-                    win = true;
-                    humanScore += 3;
+                if (human == xs[1])
+                { //User chooses paper
+                    if (alien == xs[2] || alien == xs[3])         // scissors or lizard
+                        alienScore += 3;
+
+                    else if (alien == xs[0] || alien == xs[4])
+                    {                                             // rock or spock
+                        win = true;
+                        humanScore += 3;
+                    }
+                    else
+                    {
+                        draw = true;
+                        humanScore++;
+                        alienScore++;
+                    }
                 }
-                else
-                {
-                    draw = true;
-                    humanScore++;
-                    alienScore++;
+
+                if (human == xs[2])
+                { //User chooses rock
+                    if (alien == xs[1] || alien == xs[4])           //paper or spock
+                        alienScore += 3;
+
+
+                    else if (alien == xs[0] || alien == xs[4])
+                    {                                               // scissors or lizard
+                        win = true;
+                        humanScore += 3;
+                    }
+
+                    else
+                    {
+                        draw = true;
+                        humanScore++;
+                        alienScore++;
+                    }
                 }
-            }
-           
-            
-            
-            scrn.Text =   draw ? String.Format(@" Its a draw you both chose {0}",human) :  ( win ? String.Format( @" 
-                               Congrats you won the round! 
-                               Alien chose {0} 
-                               and you chose {1} ", alien, human ) :
-                              String.Format(@" Oops you lost the round.
-                               Alien chose {0} 
-                               and you chose {1}  ", alien, human  )  );
+
+                if (human == xs[3])
+                { //User chooses lizard
+                    if (alien == xs[0] || alien == xs[2])           // rock or scissors 
+                        alienScore += 3;
+
+                    else if (alien == xs[1] || alien == xs[4])
+                    {// paper or spock
+                      win = true;
+                      humanScore += 3;
+                }
+                    else
+                    {
+                        draw = true;
+                        humanScore++;
+                        alienScore++;
+                    }
+                }
+
+                if (human == xs[4])
+                { //User chooses spock
+                    if (alien == xs[3] || alien == xs[1])           // lizard or paper
+                        alienScore += 3;
+
+                    else if (alien == xs[0] || alien == xs[2])
+                    {                                               //  User chooses scissors or rock
+                        win = true;
+                        humanScore += 3;
+                    }
+                    else
+                    {
+                        draw = true;
+                        humanScore++;
+                        alienScore++;
+                    }
+                }
+
+
+            scrn.Text = draw ? String.Format(@"Mmmmh its a draw you both chose {0}", human) :
+                             (win ? String.Format(@"Congrats :) YOU won this round! ALIEN chose {0} and YOU chose {1} ", alien, human) :
+                               String.Format(@" Oops :( YOU lost the round. ALIEN chose {0} and YOU chose {1}", alien, human));
 
             hmn.Text = humanScore.ToString();
             cmp.Text = alienScore.ToString();
+            sets--;
+            nsets.Text = (sets).ToString();
+          
+            if (sets <= 0)
+            {
+
+                string k = humanScore == alienScore ? "The Game ended in a draw" : humanScore > alienScore ? String.Format(@"CONGRATS you won the game!
+                                                          Your Score = {0}, ALIEN Score = {1}", humanScore, alienScore) : String.Format(@"
+                                                          Oops YOU lost the game try again.
+                                                          Your Score = {0}, ALIEN Score = {1}", humanScore, alienScore);
+                MessageBox.Show(k);
+                ResetGame();
+            }
+
         }
-
-
+        private void ResetGame()
+        {
+            alienScore = 0; humanScore = 0; sets =3;
+            hmn.Text = humanScore.ToString();
+            cmp.Text = alienScore.ToString();
+            scrn.Text= "WELCOME TO Rock, Paper, Scissors, Lizard && Spock";
+            nsets.Text = "3";
+        }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         { //Rock 
@@ -204,10 +225,7 @@ namespace RockPaperScissorsLizardSpock
         private void Button_Click_5(object sender, RoutedEventArgs e)
         { //reset scores
 
-            alienScore = 0;
-            humanScore = 0;
-            hmn.Text = humanScore.ToString();
-            cmp.Text = alienScore.ToString();
+            ResetGame();
         }
     }
 }

@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "mPRIcijYYieaT9sbDVmJoHO8Nqzm+g241O6lFPoXIPaGDtToF0G5hskLZyJ1bNNle8pSuTrQnKlp9LVe+Qzmuw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Tichaona Zvidzayi\\source\\repos\\TRockPaperScissorsLizardSpock\\RockPaperScissorsLizardSpock\\RockPaperScissorsLizardSpock.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Tichaona Zvidzayi\\.nuget\\packages\\microsoft.netcore.app.runtime.win-x64\\3.1.21\\microsoft.netcore.app.runtime.win-x64.3.1.21.nupkg.sha512",
+    "C:\\Users\\Tichaona Zvidzayi\\.nuget\\packages\\microsoft.windowsdesktop.app.runtime.win-x64\\3.1.21\\microsoft.windowsdesktop.app.runtime.win-x64.3.1.21.nupkg.sha512",
+    "C:\\Users\\Tichaona Zvidzayi\\.nuget\\packages\\microsoft.aspnetcore.app.runtime.win-x64\\3.1.21\\microsoft.aspnetcore.app.runtime.win-x64.3.1.21.nupkg.sha512"
+  ],
+  "logs": []
+}

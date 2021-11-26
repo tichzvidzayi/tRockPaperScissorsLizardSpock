@@ -6,4 +6,28 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="back.jpeg" />
+    <None Remove="background.jpg" />
+    <None Remove="icons.png" />
+    <None Remove="lizard.png" />
+    <None Remove="paper.jpg" />
+    <None Remove="reset.jpg" />
+    <None Remove="rock.png" />
+    <None Remove="scissors.png" />
+    <None Remove="spock.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="back.jpeg" />
+    <Resource Include="background.jpg" />
+    <Resource Include="icons.png" />
+    <Resource Include="lizard.png" />
+    <Resource Include="paper.jpg" />
+    <Resource Include="reset.jpg" />
+    <Resource Include="rock.png" />
+    <Resource Include="scissors.png" />
+    <Resource Include="spock.jpg" />
+  </ItemGroup>
+
 </Project>

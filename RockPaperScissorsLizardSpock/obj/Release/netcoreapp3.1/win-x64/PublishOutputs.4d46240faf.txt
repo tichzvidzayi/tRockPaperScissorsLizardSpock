@@ -1,0 +1,2 @@
+C:\Users\Tichaona Zvidzayi\source\repos\TRockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\bin\Release\netcoreapp3.1\publish\RockPaperScissorsLizardSpock.pdb
+C:\Users\Tichaona Zvidzayi\source\repos\TRockPaperScissorsLizardSpock\RockPaperScissorsLizardSpock\bin\Release\netcoreapp3.1\publish\RockPaperScissorsLizardSpock.exe
