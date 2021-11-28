@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="RockPaperScissorsLizardSpock
         " Height="465" Width="788" Icon="/icons.png">
-    <Grid Margin="0,0,-2,-6" Background="#FFF0E7E7">
+    <Grid Margin="0,0,-2,-6" Background="#FFF0E7E7" Opacity="0.76">
         <Grid.RowDefinitions>
             <RowDefinition Height="21*"/>
             <RowDefinition Height="19*"/>
@@ -20,9 +20,11 @@
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="0*"/>
             <ColumnDefinition Width="27*"/>
-            <ColumnDefinition Width="693*"/>
+            <ColumnDefinition Width="91*"/>
+            <ColumnDefinition Width="444*"/>
+            <ColumnDefinition Width="159*"/>
         </Grid.ColumnDefinitions>
-        <Button Content=" " Grid.Column="7" HorizontalAlignment="Left" Margin="182,145,0,0" VerticalAlignment="Top" Height="99" Width="119" Click="Button_Click_2" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" BorderThickness="0,0,0,0">
+        <Button Content=" " Grid.Column="8" HorizontalAlignment="Left" Margin="91,145,0,0" VerticalAlignment="Top" Height="99" Width="119" Click="Button_Click_2" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" BorderThickness="0,0,0,0">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -35,7 +37,7 @@
                 <ImageBrush ImageSource="/scissors.png"/>
             </Button.Background>
         </Button>
-        <Button Content=" " Grid.Column="7" HorizontalAlignment="Left" Margin="43,154,0,0" VerticalAlignment="Top" Height="101" Width="115" Click="Button_Click_1" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" BorderThickness="0,0,0,0">
+        <Button Content=" " Grid.Column="7" HorizontalAlignment="Left" Margin="43,154,0,0" VerticalAlignment="Top" Height="101" Width="115" Click="Button_Click_1" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" BorderThickness="0,0,0,0" Grid.ColumnSpan="2">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -48,12 +50,12 @@
                 <ImageBrush ImageSource="/paper.jpg"/>
             </Button.Background>
         </Button>
-        <Button Content=" " Grid.Column="7" HorizontalAlignment="Left" Margin="553,107,0,0" VerticalAlignment="Top" Height="67" Width="92" Click="Button_Click_5" Grid.Row="1" BorderThickness="0,0,0,0">
+        <Button Content=" " Grid.Column="9" HorizontalAlignment="Left" Margin="18,107,0,0" VerticalAlignment="Top" Height="67" Width="92" Click="Button_Click_5" Grid.Row="1" BorderThickness="0,0,0,0">
             <Button.Background>
                 <ImageBrush ImageSource="/reset.jpg"/>
             </Button.Background>
         </Button>
-        <Button Content=" " Grid.Column="7" HorizontalAlignment="Left" Margin="320,151,0,0" VerticalAlignment="Top" Height="100" Width="121" Click="Button_Click_3" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" BorderThickness="0,0,0,0">
+        <Button Content=" " Grid.Column="8" HorizontalAlignment="Left" Margin="229,151,0,0" VerticalAlignment="Top" Height="100" Width="121" Click="Button_Click_3" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" BorderThickness="0,0,0,0">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -66,7 +68,7 @@
                 <ImageBrush ImageSource="/lizard.png"/>
             </Button.Background>
         </Button>
-        <Button Content=" " Grid.Column="7" HorizontalAlignment="Left" Margin="464,145,0,0" VerticalAlignment="Top" Height="99" Width="108" Click="Button_Click_4" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2">
+        <Button Content=" " Grid.Column="8" HorizontalAlignment="Left" Margin="373,145,0,0" VerticalAlignment="Top" Height="99" Width="108" Click="Button_Click_4" RenderTransformOrigin="0.5,0.5" Grid.RowSpan="2" Grid.ColumnSpan="2">
             <Button.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -92,14 +94,14 @@
                 <ImageBrush ImageSource="/rock.png"/>
             </Button.Background>
         </Button>
-        <TextBlock x:Name="scrn" HorizontalAlignment="Left" Margin="23,32,0,0" Text="WELCOME TO ROCK, PAPER, SCISSORS, LIZARD &amp; SPOCK" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="563" Grid.Column="7" FontSize="18" FontStyle="Normal"/>
-        <TextBlock x:Name="hmn" Grid.Column="7" HorizontalAlignment="Left" Margin="200,121,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="98" FontSize="36" Grid.Row="1"/>
-        <TextBlock x:Name="cmp" Grid.Column="7" HorizontalAlignment="Left" Margin="418,119,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="93" FontSize="36" Grid.Row="1">
+        <TextBlock x:Name="scrn" HorizontalAlignment="Left" Margin="23,32,0,0" Text="WELCOME TO ROCK, PAPER, SCISSORS, LIZARD &amp; SPOCK" TextWrapping="Wrap" VerticalAlignment="Top" Height="71" Width="563" Grid.Column="7" FontSize="18" FontStyle="Normal" Grid.ColumnSpan="3"/>
+        <TextBlock x:Name="hmn" Grid.Column="8" HorizontalAlignment="Left" Margin="109,121,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="55" Width="98" FontSize="36" Grid.Row="1"/>
+        <TextBlock x:Name="cmp" Grid.Column="8" HorizontalAlignment="Left" Margin="327,119,0,0" Text="0" TextWrapping="Wrap" VerticalAlignment="Top" Height="40" Width="93" FontSize="36" Grid.Row="1">
             <TextBlock.Style>
                 <Style/>
             </TextBlock.Style>
         </TextBlock>
-        <TextBlock Grid.Column="7" HorizontalAlignment="Left" Margin="219,102,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="0" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
+        <TextBlock Grid.Column="8" HorizontalAlignment="Left" Margin="128,102,0,0" Text="TextBlock" TextWrapping="Wrap" VerticalAlignment="Top" Height="0" RenderTransformOrigin="0.5,0.5" Grid.Row="1">
             <TextBlock.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform ScaleY="-1"/>
@@ -110,8 +112,8 @@
             </TextBlock.RenderTransform>
         </TextBlock>
         <TextBox x:Name="nsets" HorizontalAlignment="Left" Margin="4,140,0,0" Text="3" TextWrapping="Wrap" VerticalAlignment="Top" Width="38" FontSize="18" Grid.Row="1" Grid.Column="7"/>
-        <Label Content="YOUR score :" Grid.Column="7" HorizontalAlignment="Left" Margin="120,136,0,0" Grid.Row="1" VerticalAlignment="Top"/>
-        <Label Content="ALIEN score :" Grid.Column="7" HorizontalAlignment="Left" Margin="336,136,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="YOUR score :" Grid.Column="8" HorizontalAlignment="Left" Margin="29,136,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <Label Content="ALIEN score :" Grid.Column="8" HorizontalAlignment="Left" Margin="245,136,0,0" Grid.Row="1" VerticalAlignment="Top"/>
         <Label Content="Number of Sets :" HorizontalAlignment="Left" Margin="-2,137,0,0" Grid.Row="1" VerticalAlignment="Top" Grid.ColumnSpan="8" Height="23" Width="122"/>
 
     </Grid>

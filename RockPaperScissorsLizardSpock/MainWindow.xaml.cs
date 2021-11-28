@@ -170,7 +170,7 @@ namespace RockPaperScissorsLizardSpock
             hmn.Text = humanScore.ToString();
             cmp.Text = alienScore.ToString();
             sets--;
-            nsets.Text = (sets).ToString();
+            nsets.Text = (sets).ToString(); 
           
             if (sets <= 0)
             {
