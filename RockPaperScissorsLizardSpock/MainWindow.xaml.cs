@@ -198,10 +198,7 @@ namespace RockPaperScissorsLizardSpock
 
          Results(xs[0], CompChoice());
 
-
         }
-
-      
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {// Paper
             Results(xs[1], CompChoice());
@@ -211,7 +208,6 @@ namespace RockPaperScissorsLizardSpock
         { //Scissors
             Results(xs[2], CompChoice());
         }
-
         private void Button_Click_3(object sender, RoutedEventArgs e)
         {// Lizard
             Results(xs[3], CompChoice());
@@ -224,7 +220,6 @@ namespace RockPaperScissorsLizardSpock
 
         private void Button_Click_5(object sender, RoutedEventArgs e)
         { //reset scores
-
             ResetGame();
         }
     }
