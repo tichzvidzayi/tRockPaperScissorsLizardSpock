@@ -198,10 +198,7 @@ namespace RockPaperScissorsLizardSpock
 
          Results(xs[0], CompChoice());
 
-
         }
-
-      
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {// Paper
             Results(xs[1], CompChoice());
